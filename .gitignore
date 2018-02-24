@@ -1,2 +1,7 @@
+# IDE-related stuff
 .idea/
-test.js
+*.swp
+
+# Node modules
+node_modules/
+

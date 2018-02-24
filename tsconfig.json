@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "lib": ["es5", "es2015"],
+        "types": ["node"],
+        "strict": true,
+        "declaration": true,
+        "noImplicitAny": true,
+        "removeComments": true
+    }
+}

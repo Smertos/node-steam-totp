@@ -1,26 +1,43 @@
 {
-	"name": "steam-totp",
-	"version": "2.0.1",
-	"description": "Generate Steam-style TOTP codes given a secret",
-	"keywords": ["steam", "steam client", "steam guard"],
-	"homepage": "https://github.com/DoctorMcKay/node-steam-totp",
-	"bugs": {
-		"url": "https://github.com/DoctorMcKay/node-steam-totp/issues"
-	},
-	"license": "MIT",
-	"author": {
-		"name": "Alexander Corn",
-		"email": "mckay@doctormckay.com",
-		"url": "https://www.doctormckay.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/DoctorMcKay/node-steam-totp.git"
-	},
-	"dependencies": {
-		"@doctormckay/stats-reporter": "^1.0.0"
-	},
-	"engines": {
-		"node": ">=6.0.0"
-	}
+    "name": "steam-totp-ts",
+    "version": "2.0.1",
+    "description": "Generate Steam-style TOTP codes given a secret",
+    "keywords": [
+        "steam",
+        "steam client",
+        "steam guard"
+    ],
+    "homepage": "https://github.com/Smertos/node-steam-totp-ts",
+    "bugs": {
+        "url": "https://github.com/Smertos/node-steam-totp-ts/issues"
+    },
+    "license": "MIT",
+    "author": "Alexander Corn <mckay@doctormckay.com> (https://www.doctormckay.com)",
+    "contributors": [
+        "Mikhail Vedernikov <misha.smert@gmail.com>"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Smertos/node-steam-totp-ts.git"
+    },
+    "dependencies": {
+        "@doctormckay/stats-reporter": "^1.0.0"
+    },
+    "engines": {
+        "node": ">=6.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^9.4.5",
+        "chai": "^4.1.2",
+        "mocha": "^5.0.0",
+        "rollup": "^0.55.5",
+        "rollup-plugin-commonjs": "^8.3.0",
+        "rollup-plugin-node-resolve": "^3.0.2",
+        "rollup-plugin-typescript": "^0.8.1",
+        "typescript": "^2.7.1"
+    },
+    "scripts": {
+        "build": "rollup -c",
+        "test": "rollup -c && mocha"
+    }
 }
